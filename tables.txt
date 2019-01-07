@@ -1,0 +1,9 @@
+
+SQL> create table policy_questions(pol_ques_id number(10) primary key,bus_seg_id number(10),pol_ques_desc varchar2(80),pol_ques_ans1 varchar2(30),pol_ques_ans1_weightage number(5),pol_ques_ans2 varchar2(30),pol_ques_ans2_weightage number(5),pol_ques_ans3 varchar2(30),pol_ques_ans3_weightage number(5),foreign key(bus_seg_id) references business_Segment(bus_seg_id)); 
+
+SQL> create table business_segment(bus_seg_id number(10),bus_seg_name varchar2(20)); 
+SQL> create table policy_questions(pol_ques_id number(10) primary key,bus_seg_id number(10),pol_ques_desc varchar2(80),pol_ques_ans1 varchar2(30),pol_ques_ans1_weightage number(5),pol_ques_ans2 varchar2(30),pol_ques_ans2_weightage number(5),pol_ques_ans3 varchar2(30),pol_ques_ans3_weightage number(5),foreign key(bus_seg_id) references business_Segment(bus_seg_id));
+
+Table created. 
+ 
+s
